@@ -101,7 +101,7 @@
       txtName = '',
       txtNum = '',
       txtClass = '',
-      txtFaculty = '',
+      txtSubject = '',
       txtContent = '';
 
     let fonts = [{
@@ -114,15 +114,35 @@
         'name': 'Gloria Hallelujah',
         'file': 'GloriaHallelujah-Regular.ttf'
       },
-      // {
-      //   'index': 2,
-      //   'name': 'Heart Warming by Situjuh',
-      //   'file': 'Heart Warming Font by Situjuh.otf'
-      // },
+      {
+        'index': 2,
+        'name': 'Lemon Tuesday',
+        'file': 'Lemon Tuesday.otf'
+      },
       {
         'index': 3,
         'name': 'Shadows Into Light',
         'file': 'ShadowsIntoLight-Regular.ttf'
+      },
+      {
+        'index': 4,
+        'name': 'My Handsare',
+        'file': 'MyHandsareHoldingYou.ttf'
+      },
+      {
+        'index': 5,
+        'name': 'Rough Rough',
+        'file': 'Rough Rough Font by 7NTypes.otf'
+      },
+      {
+        'index': 6,
+        'name': 'Heart Warming',
+        'file': 'Heart Warming Font by Situjuh (7NTypes).otf'
+      },
+      {
+        'index': 7,
+        'name': 'Noona Land',
+        'file': 'Noona Land.ttf'
       }
     ];
 
@@ -140,7 +160,7 @@
     }
 
     function setup() {
-      // ukuran asli gambar 300x441
+      // real size image 300x441
       createCanvas(300 * 2, 447 * 2);
       bg = loadImage('/img/folio.jpg');
       font = loadFont('/fonts/' + getFontIndex().file);
@@ -157,7 +177,7 @@
       translate(margin - 8, margin * 4);
       text(txtName, 0, -45);
       text(txtClass, 0, -25);
-      text(txtFaculty, 0, -5);
+      text(txtSubject, 0, -5);
       text(txtDate,375, -5);
       text(txtNum,375, -25);
       translate(0, margin + 7);
@@ -249,12 +269,12 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="date">Kelas/NPM</label>
-                  <input type="text" class="form-control" id="identity" placeholder="Masukan Kelas/NPM" oninput="txtClass = this.value">
+                  <label for="date">Kelas/NIM</label>
+                  <input type="text" class="form-control" id="identity" placeholder="Masukan Kelas/NIM" oninput="txtClass = this.value">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Fakultas/Subjek</label>
-                  <input type="text" placeholder="Masukan Subjek" class="form-control" id="faculty" oninput="txtFaculty = this.value">
+                  <label for="name">Subjek</label>
+                  <input type="text" placeholder="Masukan Subjek" class="form-control" id="subject" oninput="txtSubject = this.value">
                 </div>
               </div>
               <div class="form-group">
@@ -344,7 +364,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="sub-footer">
-            <p class="love font-weight-bold">Made with HelixDev</p>
+            <p class="love font-weight-bold">Made by wildanzm</p>
           </div>
         </div>
       </div>

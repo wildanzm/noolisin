@@ -5,4 +5,4 @@
 <p>
  Noolisin is a website for generating text into handwritings.
 </p>
-Demo: https://wildanzm.github.io/noolisin
+Demo: https://noolisin.vercel.app
