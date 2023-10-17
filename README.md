@@ -1,5 +1,3 @@
-# Tulisno
-
 <h1 align="center">Noolisin</h1>
 
 <p>
